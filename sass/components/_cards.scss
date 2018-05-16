@@ -24,7 +24,7 @@
     &--front {
       background-color: $color-white;
     }
-//=========================== BACK  STYLES LINEAR GRADIENT =============================//
+    //=========================== BACK  STYLES LINEAR GRADIENT =============================//
     &--back {
       transform: rotateY(180deg);
       &-1 {
@@ -52,7 +52,7 @@
       }
     }
   }
-//==============================================================================================//
+  //==============================================================================================//
   &:hover &__side--front {
     transform: rotateY(-180deg);
   }
@@ -79,22 +79,22 @@
     }
 
     &--2 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-primary-light,
-            $color-primary-dark
-          ),
-          url("../img/nat-6.jpg");
-      }
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url("../img/nat-6.jpg");
+    }
 
-      &--3 {
-        background-image: linear-gradient(
-            to right bottom,
-            $color-tertiary-light,
-            $color-tertiary-dark
-          ),
-          url("../img/nat-7.jpg");
-      }
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url("../img/nat-7.jpg");
+    }
   }
   &__heading {
     font-size: 2.8rem;
@@ -105,13 +105,13 @@
     position: absolute;
     top: 12rem;
     right: 2rem;
-    width: 75%
+    width: 75%;
   }
-  // styles for the heading 
+  // styles for the heading
   &__heading-span {
-      padding: 1rem 1.5rem;
-      --webkit-box-decoration-break:clone;
-      box-decoration-break: clone;
+    padding: 1rem 1.5rem;
+    --webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     &--1 {
       background-image: linear-gradient(
         to right bottom,
@@ -119,53 +119,51 @@
         rgba($color-secondary-dark, 0.85)
       );
     }
-    
-    
-    &--2 {
-        background-image: linear-gradient(
-          to right bottom,
-          rgba($color-primary-light, 0.85),
-          rgba($color-primary-dark, 0.85)
-        );
-      }
 
-      &--3 {
-        background-image: linear-gradient(
-          to right bottom,
-          rgba($color-tertiary-light, 0.85),
-          rgba($color-tertiary-dark, 0.85)
-        );
-      }
-      
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
   }
 
   &__details {
-      padding: 3rem;
-      ul {
-          list-style: none;
-          width: 80%;
-          margin: 0 auto;
-      }
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+    }
 
-      li {
-          text-align: center;
-          font-size: 1.5rem;
-          color: $color-grey-dark;
-          padding: 1rem;
-          &:not(:last-child) {
-              border-bottom: 1px solid #eee;
-          }
+    li {
+      text-align: center;
+      font-size: 1.5rem;
+      color: $color-grey-dark;
+      padding: 1rem;
+      &:not(:last-child) {
+        border-bottom: 1px solid #eee;
       }
+    }
   }
 
   // ============================================= CTA ============================================= //
   &__cta {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
   }
 
   &__price-box {
@@ -175,13 +173,13 @@
   }
 
   &__price-only {
-     font-size: 1.4rem;
-     text-transform: uppercase;
+    font-size: 1.4rem;
+    text-transform: uppercase;
   }
 
   &__price-value {
-      font-size: 6rem;
-      font-weight: 100;
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
 //============================================================================================================//
