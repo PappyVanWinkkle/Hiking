@@ -15,28 +15,40 @@
 </head>
 
 <body>
-    <!-- Navigation menu for the website --><!-------------------------------------------->
+    <!-- Navigation menu for the website -->
+    <!-------------------------------------------->
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">
-              &nbsp;
-          </span>
-      </label>
-      <div class="navigation__background">
-          &nbsp;
-      </div>
-      <nav class="navigation__nav">
-          <ul class="navigation__list">
-              <li class="navigation__item"><a href="#" class="navigation__link">About Natours</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Benefits</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Popular Tours</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
-          </ul>
-      </nav>
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+        <div class="navigation__background">
+            &nbsp;
+        </div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">About Natours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Benefits</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Popular Tours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Stories</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Book Now</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <!-- End of the navigation menu --> <!---------------------------------------------------------------->
+    <!-- End of the navigation menu -->
+    <!---------------------------------------------------------------->
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="logo" class="header__logo">
@@ -79,6 +91,12 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
+                        <!--
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" alt="photos" sizes="(max-width: 900px) 20vw, (max-width: 600px) 3vw, 300px"
+                            class="composition__photo composition__photo--p1" src="img/nt-1-large.jpg">
+                        -->
+
                         <img src="img/nat-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
                         <img src="img/nat-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
@@ -376,7 +394,12 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="/img/logo-green-2x.png" alt="default" class="footer__logo">
+            <!-- Picture element for responsive images-->
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, /img/logo-green-2x.png 2x" alt="default" class="footer__logo">
+            </picture>
+
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -412,21 +435,23 @@
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
-              <img src="img/nat-8.jpg" alt="tour" class="popup__img">
-              <img src="img/nat-9.jpg" alt="tour photo" class="popup__img">
+                <img src="img/nat-8.jpg" alt="tour" class="popup__img">
+                <img src="img/nat-9.jpg" alt="tour photo" class="popup__img">
             </div>
-             <div class="popup__right">
-                 <a href="#section-tours" class="popup__close">&times;</a>
-                 <h2 class="heading-secondary u.margin-bottom-meduim">
-                     Start booking now
-                 </h2>
-                 <h3 class="heading-tertiary u-margin-bottom-2">Important &ndash;</h3>
-                  <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies, proin et libero dapibus Taciti egestas senectus nec suscipit eget gravida nam dapibus cursus fusce, venenatis euismod curae dictumst cum nunc potenti eu cubilia, volutpat viverra vivamus habitant a .</p>
-                  <a href="#" class="btn tour-button">Book Now</a>
-             </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u.margin-bottom-meduim">
+                    Start booking now
+                </h2>
+                <h3 class="heading-tertiary u-margin-bottom-2">Important &ndash;</h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies, proin et libero dapibus Taciti egestas
+                    senectus nec suscipit eget gravida nam dapibus cursus fusce, venenatis euismod curae dictumst cum nunc
+                    potenti eu cubilia, volutpat viverra vivamus habitant a .</p>
+                <a href="#" class="btn tour-button">Book Now</a>
+            </div>
         </div>
     </div>
-  <!-- End of the main popup box for the web -->
+    <!-- End of the main popup box for the web -->
 </body>
 
 </html>

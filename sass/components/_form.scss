@@ -8,9 +8,13 @@
     border: none;
     font-family: inherit;
     border-bottom: 3px solid transparent;
-    width: 100%;
+    width: 45%;
     display: block;
     transition: all 0.3s;
+
+    @include respond(phone) {
+      width: 100%;
+    }
     
 
     &:focus {
