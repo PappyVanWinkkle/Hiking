@@ -4,6 +4,9 @@
 
 .margin-bottom-8 {
   margin-bottom: 8rem;
+  @include respond(tab) {
+    margin-bottom: 5rem;
+  }
 }
 
 .u-margin-bottom-2 {
